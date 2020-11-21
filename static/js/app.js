@@ -31,6 +31,7 @@ function updateFilters() {
     // 4a. Save the element that was changed as a variable.
   let date = d3.select("#datetime");
   let city = d3.select("#city");
+  let state = d3.select("#state")
   let country = d3.select("#country");
   let shape = d3.select("#shape");
     // 4b. Save the value that was changed as a variable.
@@ -38,6 +39,8 @@ function updateFilters() {
   console.log(dateValue);
   let cityValue = city.property("value");
   console.log(cityValue);
+  let stateValue = state.property("value");
+  console.log(stateValue);
   let countryValue = country.property("value");
   console.log(countryValue);
   let shapeValue = shape.property("value");
@@ -46,6 +49,8 @@ function updateFilters() {
   let dateId = date.attr("id");
   console.log(dateId);
   let cityId = city.attr("id");
+  console.log(cityId);
+  let stateId = state.attr("id");
   console.log(cityId);
   let countryId = country.attr("id");
   console.log(countryId);
@@ -64,6 +69,13 @@ function updateFilters() {
 
   if (cityValue){
     filters[cityId] = cityValue;
+  }
+  else {
+    delete filters[cityId];
+  }
+
+  if (stateValue){
+    filters[stateId] = stateValue;
   }
   else {
     delete filters[cityId];
@@ -107,6 +119,6 @@ function updateFilters() {
   
   // 2. Attach an event to listen for changes to each filter
   
-  d3.selectAll("input").on("change", updateFilters);
+d3.selectAll("input").on("change", updateFilters);
   // Build the table when the page loads
-  buildTable(tableData);
+buildTable(tableData);
