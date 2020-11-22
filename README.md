@@ -21,7 +21,7 @@ Below the title and description the user can find the five filters (yellow) and 
 
 The data can be filtered in any order, the user simply inputs information into the desired filter(s) and hits 'enter' and the page will refresh, filtering the data table for the desired parameter. In this example the first filtering is done by state. To see all the sighting in California, the user enters the 2 letter state code (in theis case 'ca') in the State filter. The data table will then show only those sightings that took place in California.
 
-![state.png](https://github.com/andrej-arsovski/UFOs_m11/blob/main/state.png)
+![state2.png](https://github.com/andrej-arsovski/UFOs_m11/blob/main/state2.png)
 
 In this example the data is further filtered based on the shape of the sighting ('light'). Now the data is filtered for sightings that occurred in California and whose shape was described as 'light'.
 
