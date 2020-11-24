@@ -51,7 +51,7 @@ function updateFilters() {
   let cityId = city.attr("id");
   console.log(cityId);
   let stateId = state.attr("id");
-  console.log(cityId);
+  console.log(stateId);
   let countryId = country.attr("id");
   console.log(countryId);
   let shapeId = shape.attr("id");
@@ -78,7 +78,7 @@ function updateFilters() {
     filters[stateId] = stateValue;
   }
   else {
-    delete filters[cityId];
+    delete filters[stateId];
   }
 
   if (countryValue){
